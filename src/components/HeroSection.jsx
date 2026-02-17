@@ -19,7 +19,7 @@ function HeroSection() {
             <p className=" text-lg">available for work</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-7">
-            <p className="font-['Anton'] text-8xl w-230 text-center">
+            <p className="font-['Anton'] text-7xl w-160 text-center">
               <span className="text-blue-500">Frontend</span> Dev Leveling Up to{" "}
               <span className="text-blue-500">Full-Stack</span>
             </p>
