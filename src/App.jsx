@@ -1,12 +1,13 @@
-import { Routers, Route } from "react-router";
+import { Routes, Route } from "react-router";
 //import { useState } from "react";
 import "./App.css";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   return (
-    <Routers>
-      <Route path="/" element={<></>}></Route>
-    </Routers>
+    <Routes>
+      <Route path="/" element={<HeroSection />}></Route>
+    </Routes>
   );
 }
 
