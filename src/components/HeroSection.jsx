@@ -20,11 +20,13 @@ function HeroSection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-7">
             <p className="font-['Anton'] text-7xl w-160 text-center">
-              <span className="text-blue-500">Frontend</span> Dev Leveling Up to{" "}
-              <span className="text-blue-500">Full-Stack</span>
+              <span className="text-blue-500">Frontend&nbsp;</span>Dev Leveling
+              Up to
+              <span className="text-blue-500">&nbsp;Full-Stack</span>
             </p>
-            <p className="text-center text-2xl text-gray-400">
-              I’m <span className="text-blue-500 font-bold">Vinayak S</span>,
+            <p className="text-center text-2xl text-gray-300">
+              I’m
+              <span className="text-blue-500 font-bold">&nbsp;Vinayak S</span>,
               building web experiences while pursuing my BCA
             </p>
           </div>
