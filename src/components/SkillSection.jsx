@@ -4,6 +4,8 @@ import js from "../assets/js-logo.svg";
 import react from "../assets/react-logo.svg";
 import tailwind from "../assets/tailwind-logo.svg";
 import figma from "../assets/figma-logo.svg";
+import java from "../assets/java-logo.png";
+import springBoot from "../assets/spring-boot-logo.png";
 function SkillSection() {
   return (
     <>
@@ -14,16 +16,20 @@ function SkillSection() {
             <span className="text-blue-500 font-bold">technologies</span>
           </p>
           <p className="text-gray-300 w-300 pt-10 text-[19px]">
-            I’m currently pursuing a  
+            I’m currently pursuing a
             <span className="text-blue-500 font-bold">
-               &nbsp;Bachelor of Computer Applications (BCA)&nbsp;
+              &nbsp;Bachelor of Computer Applications (BCA)&nbsp;
             </span>
             while learning
-            <span className="text-blue-500 font-bold">&nbsp;Java full-stack&nbsp;</span>
+            <span className="text-blue-500 font-bold">
+              &nbsp;Java full-stack&nbsp;
+            </span>
             development alongside my studies. These are the technologies I’m
             currently working with as I continue building projects and improving
             my
-            <span className="text-blue-500 font-bold">&nbsp;practical skills&nbsp;</span>
+            <span className="text-blue-500 font-bold">
+              &nbsp;practical skills&nbsp;
+            </span>
           </p>
         </div>
         <div>
@@ -48,7 +54,9 @@ function SkillSection() {
               </div>
               <div className="flex flex-col ml-5">
                 <p className="text-white font-bold">CSS</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-gray-300 text-sm">
+                  Styles website visual layout
+                </p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
@@ -57,7 +65,9 @@ function SkillSection() {
               </div>
               <div className="flex flex-col ml-5">
                 <p className="text-white font-bold">JS</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-gray-300 text-sm">
+                  Makes websites interactive
+                </p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
@@ -66,7 +76,7 @@ function SkillSection() {
               </div>
               <div className="flex flex-col ml-5">
                 <p className="text-white font-bold">React.js</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-gray-300 text-sm">UI-building JS library</p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[hsl(240,8%,21%)] rounded-md flex items-center px-3">
@@ -75,7 +85,9 @@ function SkillSection() {
               </div>
               <div className="flex flex-col ml-5">
                 <p className="text-white font-bold">Tailwind</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-gray-300 text-sm">
+                  Utility-first CSS framework
+                </p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
@@ -84,7 +96,7 @@ function SkillSection() {
               </div>
               <div className="flex flex-col ml-5">
                 <p className="text-white font-bold">Figma</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-gray-300 text-sm">Interface design tool</p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
@@ -106,28 +118,30 @@ function SkillSection() {
               </div>
             </div>
           </div>
-        </div> <div>
+        </div>{" "}
+        <div>
           <p className="text-white mt-20 font-['Anton'] text-4xl">Back-end</p>
           <p className="text-gray-300 mt-5 w-300 text-text-[19px]">
-            The part of a website that works behind the scenes, handling server logic, databases, and data processing
+            The part of a website that works behind the scenes, handling server
+            logic, databases, and data processing
           </p>
           <div className="grid grid-cols-4 gap-x-80 gap-y-10 mt-10">
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
-              <div className="bg-[#6d4c2b] h-14 w-14 flex items-center justify-center rounded-sm ">
-                <img src={html} alt="Html icon" className="h-10" />
+              <div className="bg-[#ffffff] h-14 w-14 flex items-center justify-center rounded-sm ">
+                <img src={java} alt="Html icon" className="h-12" />
               </div>
               <div className="flex flex-col ml-5">
-                <p className="text-white font-bold">HTML</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-white font-bold">Java</p>
+                <p className="text-gray-300 text-sm">Server-side language</p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
-              <div className="bg-[#472f57] h-14 w-14 flex items-center justify-center rounded-sm ">
-                <img src={css} alt="Html icon" className="h-10" />
+              <div className="bg-[#3a5c30] h-14 w-14 flex items-center justify-center rounded-sm ">
+                <img src={springBoot} alt="Html icon" className="h-10" />
               </div>
               <div className="flex flex-col ml-5">
-                <p className="text-white font-bold">CSS</p>
-                <p className="text-gray-300 text-sm">Structure of web pages</p>
+                <p className="text-white font-bold">Spring Boot</p>
+                <p className="text-gray-300 text-sm">Java backend framework</p>
               </div>
             </div>
             <div className="h-19 w-75 bg-[rgb(49,49,57)] rounded-md flex items-center px-3">
@@ -139,8 +153,6 @@ function SkillSection() {
                 <p className="text-gray-300 text-sm">Structure of web pages</p>
               </div>
             </div>
-            
-            
           </div>
         </div>
       </div>
