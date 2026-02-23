@@ -8,14 +8,14 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        index
         element={
           <>
             <HeroSection />
             <SkillSection />
           </>
         }
-      ></Route>
+      />
     </Routes>
   );
 }
