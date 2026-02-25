@@ -1,5 +1,4 @@
-import { frontEndData } from "../data/technologies";
-import { backEndData } from "../data/technologies";
+import { frontEndData,backEndData  } from "../data/technologies";
 function SkillSection() {
   const frontEndTech = frontEndData.map((items) => {
     return (

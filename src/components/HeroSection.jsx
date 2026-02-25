@@ -2,17 +2,12 @@ import mapIcon from "../assets/maps.png";
 import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import mailIcon from "../assets/email.png";
+import NavBar from "./NavBar";
 function HeroSection() {
   return (
     <>
       <div className="h-screen  flex flex-col  items-center text-white">
-        <div className="   h-[30%] w-full flex justify-end items-start text-xl gap-10 mt-[calc(100%-97%)] mr-50">
-          <p>Home</p>
-          <p>Skills</p>
-          <p>About</p>
-          <p>Projects</p>
-          <p>Contact</p>
-        </div>
+        <NavBar />
         <div className=" h-[40%] flex flex-col items-center justify-center gap-3">
           <div className="flex items-center justify-center gap-1">
             <span className="h-3 w-3 bg-[#55ff00] rounded-full translate-y-0.5"></span>
@@ -25,7 +20,7 @@ function HeroSection() {
               <span className="text-blue-500">&nbsp;Full-Stack</span>
             </p>
             <p className="text-center text-2xl text-gray-300">
-              I’m
+              I&#39;m
               <span className="text-blue-500 font-bold">&nbsp;Vinayak S</span>,
               building web experiences while pursuing my BCA
             </p>
