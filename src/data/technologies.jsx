@@ -36,6 +36,7 @@ const rawFrontEndData = [
     name: "Tailwind",
     desc: "Utility-first CSS framework",
     img: tailwind,
+    height: "h-6",
     bg: "bg-[#32555e]",
   },
   {
