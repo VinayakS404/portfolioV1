@@ -37,8 +37,20 @@ function HeroSection() {
             <p>Kerala, India</p>
           </div>{" "}
           <div className="flex gap-4">
-            <img src={githubIcon} alt="github icon" className="h-9" />
-            <img src={linkedinIcon} alt="github icon" className="h-9" />
+            <a
+              href="https://github.com/VinayakS404"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={githubIcon} alt="github icon" className="h-9" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vinayak-s-390319369/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedinIcon} alt="github icon" className="h-9" />
+            </a>
             <img src={mailIcon} alt="github icon" className="h-9" />
           </div>
           <a href="">
