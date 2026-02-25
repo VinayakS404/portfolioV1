@@ -62,12 +62,12 @@ const rawBackEndData = [
   },
 ];
 
-export const frontEndData = rawFrontEndData.map((items) => ({
+export const frontEndData = rawFrontEndData.map((items, index) => ({
   ...items,
-  id: crypto.randomUUID(),
+  id: `frontend-${items.name}-${index}`,
 }));
 
-export const backEndData = rawBackEndData.map((items) => ({
+export const backEndData = rawBackEndData.map((items, index) => ({
   ...items,
-  id: crypto.randomUUID(),
+  id: `backend-${items.name}-${index}`,
 }));
