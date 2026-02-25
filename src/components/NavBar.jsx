@@ -1,12 +1,14 @@
-function NavBar(){
-  return(
-            <div className="   h-[30%] w-full flex justify-end items-start text-xl gap-10 mt-[calc(100%-97%)] mr-50">
-          <p>Home</p>
-          <p>Skills</p>
-          <p>About</p>
-          <p>Projects</p>
-          <p>Contact</p>
-        </div>
-  )
+function NavBar() {
+  return (
+    <nav className="   h-[30%] w-full flex justify-end  text-xl mt-[calc(100%-97%)] mr-50">
+      <ul className="flex gap-10">
+        <li>Home</li>
+        <li>Skills</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  );
 }
-export default NavBar
+export default NavBar;

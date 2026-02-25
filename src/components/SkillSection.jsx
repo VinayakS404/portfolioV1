@@ -48,7 +48,7 @@ function SkillSection() {
 
   return (
     <>
-      <div className="pb-100 w-screen mt-50 flex flex-col items-center px-30 ">
+      <div className="pb-100  mt-50 flex flex-col items-center px-30 ">
         <div>
           <p className="text-white font-['Anton'] text-6xl w-130 ">
             Current

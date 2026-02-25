@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 function HeroSection() {
   return (
     <>
-      <div className="h-screen  flex flex-col  items-center text-white">
+      <div className="h-screen max-h-200  flex flex-col  items-center text-white">
         <NavBar />
         <div className=" h-[40%] flex flex-col items-center justify-center gap-3">
           <div className="flex items-center justify-center gap-1">
