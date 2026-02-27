@@ -2,7 +2,7 @@ import hamburgerIcon from "../assets/hamburger.png";
 function NavBar() {
   return (
     <>
-      <nav className="hidden md:flex  h-[30%] w-full justify-end  text-xl mt-[calc(100%-97%)] mr-50 ">
+      <nav className="hidden md:flex fixed z-10 h-20 w-full  bg-[#202021]/60 backdrop-blur-xl items-center justify-end  text-xl ] pr-40 border-b border-[#313136] ">
         <ul className="flex gap-10">
           <li>Home</li>
           <li>Skills</li>
