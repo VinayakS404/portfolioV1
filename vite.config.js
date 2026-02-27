@@ -1,14 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import { qrcode } from "vite-plugin-qrcode"; // 1. Import it
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    qrcode(), // 2. Add it here
+  ],
   server: {
     host: true,
-    hmr: {
-      host: '192.168.1.76', // This ensures the phone looks at your PC for updates
-    },
+    port: 5173,
   },
 });
