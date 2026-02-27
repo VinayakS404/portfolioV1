@@ -4,7 +4,7 @@ function SkillSection() {
     return (
       <div
         key={items.id}
-        className="h-25 sm:h-20  bg-[rgb(49,49,57)] rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 "
+        className="h-25 sm:h-20 border-t border-l border-[#404145] bg-[rgb(49,49,57)]/50 backdrop-blur-sm rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 relative z-10"
       >
         <div
           className={` ${items.bg}  h-14 w-14 lex shrink-0 flex  items-center justify-center rounded-sm mt-1 sm:mt-0`}
@@ -27,7 +27,7 @@ function SkillSection() {
     return (
       <div
         key={items.id}
-        className="h-25 sm:h-20  bg-[rgb(49,49,57)] rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 "
+        className="h-25 sm:h-20 border-t border-l border-[#404145] bg-[rgb(49,49,57)]/50 backdrop-blur-sm rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 relative z-10"
       >
         <div
           className={` ${items.bg}  h-14 w-14 lex shrink-0 flex  items-center justify-center rounded-sm mt-1 sm:mt-0`}

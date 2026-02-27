@@ -5,9 +5,9 @@ import mailIcon from "../assets/email.png";
 import NavBar from "./NavBar";
 function HeroSection() {
   return (
-    <div className="max-h-200  flex flex-col  items-center text-white px-8 gap-35 md:gap-45">
+    <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-35 md:gap-45 ">
       <NavBar />
-      <div className=" h-[60%] flex flex-col items-center justify-center gap-3">
+      <div className=" h-[60%] flex flex-col items-center justify-center  gap-3 pt-50 md:pt-0">
         <div className="flex items-center gap-1">
           <span className="h-2 w-2 md:h-2.5 md:w-2.5 mb-1 md:mb-0  bg-[#55ff00] rounded-full translate-y-0.5"></span>
           <p className="  text-sm  md:text-md ">available for work</p>
@@ -26,7 +26,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="  h-[30%]  flex flex-col sm:flex-row  items-center sm:items-end justify-center text-2xl gap-3 md:gap-8 mb-[calc(100%-97%)] ">
-        <div className="flex flex-col items-center  bg-[#212223]  p-5 rounded-2xl md:bg-transparent">
+        <div className="flex flex-col items-center border-t border-l border-[#404145] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  p-5 rounded-2xl md:bg-transparent">
           <div className=" ">
             <div className=" flex gap-8 md:hidden">
               <a
@@ -54,7 +54,7 @@ function HeroSection() {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/in/vinayak-s-390319369/"
+                href="mailto:oreva.vinayak.com"
                 target="_blank"
                 rel="noreferrer"
                 className="shrink-0"
@@ -98,7 +98,7 @@ function HeroSection() {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/in/vinayak-s-390319369/"
+                href="mailto:oreva.vinayak.com"
                 target="_blank"
                 rel="noreferrer"
                 className="shrink-0"
