@@ -3,6 +3,7 @@ import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import mailIcon from "../assets/email.png";
 import NavBar from "./NavBar";
+import { iconHover } from "../data/style"; //iconHover1
 function HeroSection() {
   return (
     <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-25 md:gap-35  ">
@@ -38,7 +39,7 @@ function HeroSection() {
                 <img
                   src={githubIcon}
                   alt="github icon"
-                  className=" h-10  md:h-9"
+                  className=" h-10  md:h-9 "
                 />
               </a>
               <a
@@ -82,7 +83,8 @@ function HeroSection() {
                 <img
                   src={githubIcon}
                   alt="github icon"
-                  className=" h-10  md:h-9"
+                  className={` h-10  md:h-9 ${iconHover} `}
+                  
                 />
               </a>
               <a
@@ -94,7 +96,7 @@ function HeroSection() {
                 <img
                   src={linkedinIcon}
                   alt="github icon"
-                  className="h-10  md:h-9"
+                  className={` h-10  md:h-9 ${iconHover} `}
                 />
               </a>
               <a
@@ -106,7 +108,7 @@ function HeroSection() {
                 <img
                   src={mailIcon}
                   alt="github icon"
-                  className="h-10  md:h-9"
+                  className={` h-10  md:h-9 ${iconHover} `}
                 />
               </a>
             </div>

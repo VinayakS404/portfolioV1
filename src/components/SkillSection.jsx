@@ -1,14 +1,10 @@
 import { frontEndData, backEndData } from "../data/technologies";
+import { cardClass, cardInnerBgClass, cardGridClass } from "../data/style";
 function SkillSection() {
   const frontEndTech = frontEndData.map((items) => {
     return (
-      <div
-        key={items.id}
-        className="h-25 sm:h-20 border-t border-l border-[#404145] bg-[rgb(49,49,57)]/50 backdrop-blur-sm rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 relative z-10 md:hover:scale-104 md:hover:bg-[rgb(49,49,57)]/80 transition-all duration-100 ease-in"
-      >
-        <div
-          className={`${items.bg} h-14 w-14 shrink-0 flex items-center justify-center rounded-sm mt-1 sm:mt-0`}
-        >
+      <div key={items.id} className={`${cardClass}`}>
+        <div className={`${items.bg} ${cardInnerBgClass} `}>
           <img
             src={items.img}
             alt={`${items.name}-icon`}
@@ -25,13 +21,8 @@ function SkillSection() {
 
   const backEndTech = backEndData.map((items) => {
     return (
-      <div
-        key={items.id}
-        className="h-25 sm:h-20 border-t border-l border-[#404145] bg-[rgb(49,49,57)]/50 backdrop-blur-sm rounded-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-0 px-3 relative z-10 md:hover:scale-104 md:hover:bg-[rgb(49,49,57)]/80 transition-all duration-100 ease-in"
-      >
-        <div
-          className={`${items.bg} h-14 w-14 shrink-0 flex items-center justify-center rounded-sm mt-1 sm:mt-0`}
-        >
+      <div key={items.id} className={`${cardClass}`}>
+        <div className={`${items.bg} ${cardInnerBgClass} `}>
           <img
             src={items.img}
             alt={`${items.name}-icon`}
@@ -48,7 +39,6 @@ function SkillSection() {
 
   return (
     <div className="relative pb-100 mt-50 flex flex-col items-center px-10">
-
       <div className="absolute inset-0 backdrop-blur-[5px] mask-[linear-gradient(to_bottom,transparent_0%,black_10%)] pointer-events-none" />
 
       <div className="relative z-10 w-full flex flex-col items-center">
@@ -83,9 +73,7 @@ function SkillSection() {
             The part of a website users see and interact with, including layout,
             design, and basic interactivity
           </p>
-          <div className="w-full max-w-6xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
-            {frontEndTech}
-          </div>
+          <div className={`${cardGridClass}`}>{frontEndTech}</div>
         </div>
 
         <div>
@@ -94,9 +82,7 @@ function SkillSection() {
             The part of a website that works behind the scenes, handling server
             logic, databases, and data processing
           </p>
-          <div className="w-full max-w-6xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
-            {backEndTech}
-          </div>
+          <div className={`${cardGridClass}`}>{backEndTech}</div>
         </div>
       </div>
     </div>
