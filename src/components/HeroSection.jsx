@@ -55,7 +55,7 @@ function HeroSection() {
                 />
               </a>
               <a
-                href="mailto:oreva.vinayak.com"
+                href="mailto:oreva.vinayak@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="shrink-0"
