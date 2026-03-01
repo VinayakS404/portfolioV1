@@ -9,13 +9,13 @@ import springBoot from "../assets/spring-boot-logo.png";
 
 const rawFrontEndData = [
   {
-    name: "html",
+    name: "HTML",
     desc: "Structure of web pages",
     img: html,
     bg: "bg-[#6d4c2b]",
   },
   {
-    name: "css",
+    name: "CSS",
     desc: "Styles website visual layout",
     img: css,
     bg: "bg-[#472f57]",

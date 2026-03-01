@@ -12,7 +12,7 @@ function SkillSection() {
           />
         </div>
         <div className="flex flex-col sm:ml-5">
-          <p className="text-white font-bold">{items.name}</p>
+          <p className="text-white text-sm md:text font-bold">{items.name}</p>
           <p className="text-gray-300 text-sm hidden sm:block">{items.desc}</p>
         </div>
       </div>
@@ -30,7 +30,7 @@ function SkillSection() {
           />
         </div>
         <div className="flex flex-col sm:ml-5">
-          <p className="text-white font-bold">{items.name}</p>
+          <p className="text-white text-sm md:text font-bold">{items.name}</p>
           <p className="text-gray-300 text-sm hidden sm:block">{items.desc}</p>
         </div>
       </div>
