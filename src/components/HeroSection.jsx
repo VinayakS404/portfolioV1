@@ -10,16 +10,16 @@ function HeroSection() {
       <NavBar />
       <div className=" h-[60%] flex flex-col items-center justify-center  gap-3 pt-50 md:pt-70">
         <div className="flex items-center gap-1">
-          <span className="relative  h-2 w-2 md:h-2.5 md:w-2.5 mb-1 md:mb-0  bg-[#55ff00] rounded-full translate-y-0.5"></span>
-          <p className="  text-sm  md:text-md ">available for work</p>
+          <span className="relative  h-2 w-2 md:h-2.5 md:w-2.5 mb-1 md:mb-0  bg-[#55ff00] rounded-full translate-y-0.5 "></span>
+          <p className="  text-sm  md:text-md bg-linear-to-r from-transparent via-black/90 to-transparent">available for work</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-8">
-          <p className="font-['Anton'] text-6xl  w-full md:w-160  text-center">
+          <p className="font-['Anton'] text-6xl  w-full md:w-160  text-center bg-linear-to-r from-transparent via-black/90 to-transparent">
             <span className="text-blue-500">Frontend&nbsp;</span>Dev Leveling Up
             to
             <span className="text-blue-500">&nbsp;Full-Stack</span>
           </p>
-          <p className="text-center text-sm  md:text-xl  text-gray-300">
+          <p className="text-center text-sm  md:text-xl  text-gray-300 bg-linear-to-r from-transparent via-black/90 to-transparent">
             I&#39;m
             <span className="text-blue-500 font-bold">&nbsp;Vinayak S</span>,
             building web experiences while pursuing my BCA
