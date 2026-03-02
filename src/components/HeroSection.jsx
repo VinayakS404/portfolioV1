@@ -3,7 +3,7 @@ import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import mailIcon from "../assets/email.png";
 import NavBar from "./NavBar";
-import { iconHover } from "../data/style"; //iconHover1
+import { iconHover } from "../data/style";
 function HeroSection() {
   return (
     <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-25 md:gap-35  ">
@@ -11,7 +11,9 @@ function HeroSection() {
       <div className=" h-[60%] flex flex-col items-center justify-center  gap-3 pt-50 md:pt-70">
         <div className="flex items-center gap-1">
           <span className="relative  h-2 w-2 md:h-2.5 md:w-2.5 mb-1 md:mb-0  bg-[#55ff00] rounded-full translate-y-0.5 "></span>
-          <p className="  text-sm  md:text-md bg-linear-to-r from-transparent via-black/90 to-transparent">available for work</p>
+          <p className="  text-sm  md:text-md bg-linear-to-r from-transparent via-black/90 to-transparent">
+            available for work
+          </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-8">
           <p className="font-['Anton'] text-6xl  w-full md:w-160  text-center bg-linear-to-r from-transparent via-black/90 to-transparent">
@@ -84,7 +86,6 @@ function HeroSection() {
                   src={githubIcon}
                   alt="github icon"
                   className={` h-10  md:h-9 ${iconHover} `}
-                  
                 />
               </a>
               <a
