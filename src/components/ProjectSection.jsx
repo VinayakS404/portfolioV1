@@ -1,6 +1,7 @@
+import ProjectCard from "./ProjectCard";
 function ProjectSection() {
   return (
-    <div className="h-90 w-full bg-[#796262] flex flex-col items-center px-10">
+    <div className="h-350 w-full bg-[#796262] flex flex-col items-center ">
       <div>
         <p className="text-white font-['Anton'] text-[45px] md:text-6xl w-full max-w-2xl leading-tight">
           Current&nbsp;
@@ -19,11 +20,14 @@ function ProjectSection() {
           </span>
           development alongside my studies. These are the technologies I'm
           currently working with as I continue building projects and improving
-          my
+          my 
           <span className="text-blue-500 font-bold">
             &nbsp;practical skills&nbsp;
           </span>
         </p>
+      </div>
+      <div>
+        <ProjectCard/>
       </div>
     </div>
   );
