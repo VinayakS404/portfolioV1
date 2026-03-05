@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 function ProjectSection() {
   return (
-    <div className="h-350 w-full bg-[#796262] flex flex-col items-center ">
+    <div className="h-350 w-full  flex flex-col items-center ">
       <div>
         <p className="text-white font-['Anton'] text-[45px] md:text-6xl w-full max-w-2xl leading-tight">
           Current&nbsp;
@@ -27,6 +27,9 @@ function ProjectSection() {
         </p>
       </div>
       <div>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
         <ProjectCard/>
       </div>
     </div>
