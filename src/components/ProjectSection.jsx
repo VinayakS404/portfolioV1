@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCardDetailed from "./ProjectCardDetailed";
 function ProjectSection() {
   return (
     <div className="h-350 w-full  flex flex-col items-center ">
@@ -27,10 +27,10 @@ function ProjectSection() {
         </p>
       </div>
       <div>
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
+        <ProjectCardDetailed/>
+        <ProjectCardDetailed/>
+        <ProjectCardDetailed/>
+        <ProjectCardDetailed/>
       </div>
     </div>
   );
