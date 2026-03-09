@@ -1,5 +1,5 @@
 import { frontEndData, backEndData } from "../data/technologies";
-import { cardClass, cardInnerBgClass, cardGridClass } from "../data/style";
+import { cardClass, cardInnerBgClass, cardGridClass, bgBlurNBack } from "../data/style";
 function SkillSection() {
   const frontEndTech = frontEndData.map((items) => {
     return (
@@ -38,8 +38,8 @@ function SkillSection() {
   });
 
   return (
-    <div className="relative pb-40 mt-50 flex flex-col items-center px-10">
-      <div className="absolute inset-0 backdrop-blur-[5px] mask-[linear-gradient(to_bottom,transparent_0%,black_10%)] pointer-events-none" />
+    <div className="relative  mt-50 flex flex-col items-center px-10">
+      <div className={`${bgBlurNBack} absolute`} />
 
       <div className="relative z-10 w-full flex flex-col items-center">
         <div>

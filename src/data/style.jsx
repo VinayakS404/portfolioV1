@@ -6,3 +6,4 @@ export const cardInnerBgClass =
   "h-14 w-14 shrink-0 flex items-center justify-center rounded-sm mt-1.5 sm:mt-0";
 export const cardGridClass =
   "w-full max-w-6xl grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10";
+export const bgBlurNBack = " inset-0 backdrop-blur-[5px] mask-[linear-gradient(to_bottom,transparent_0%,black_10%)] pointer-events-none";
