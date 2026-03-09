@@ -1,5 +1,5 @@
-import githubBlack from "../assets/github-black.png";
-import www from "../assets/www-icon.png";
+import githubBlack from "../../assets/github-black.png";
+import www from "../../assets/www-icon.png";
 //import {projects} from '../data/projects'
 function ProjectCardDetailed() {
   return (

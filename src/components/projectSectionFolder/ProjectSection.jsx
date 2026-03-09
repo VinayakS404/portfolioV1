@@ -1,7 +1,8 @@
 import ProjectCardDetailed from "./ProjectCardDetailed";
+import { bgBlurNBack } from "../../data/style";
 function ProjectSection() {
   return (
-    <div className="h-350 w-full  flex flex-col items-center ">
+    <div className={`h-350 w-full pt-50  flex flex-col items-center ${bgBlurNBack}`}>
       <div>
         <p className="text-white font-['Anton'] text-[45px] md:text-6xl w-full max-w-2xl leading-tight">
           Current&nbsp;
@@ -20,17 +21,17 @@ function ProjectSection() {
           </span>
           development alongside my studies. These are the technologies I'm
           currently working with as I continue building projects and improving
-          my 
+          my
           <span className="text-blue-500 font-bold">
             &nbsp;practical skills&nbsp;
           </span>
         </p>
       </div>
       <div>
-        <ProjectCardDetailed/>
-        <ProjectCardDetailed/>
-        <ProjectCardDetailed/>
-        <ProjectCardDetailed/>
+        <ProjectCardDetailed />
+        <ProjectCardDetailed />
+        <ProjectCardDetailed />
+        <ProjectCardDetailed />
       </div>
     </div>
   );

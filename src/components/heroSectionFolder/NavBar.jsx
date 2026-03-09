@@ -1,4 +1,4 @@
-import hamburgerIcon from "../assets/hamburger.png";
+import hamburgerIcon from "../../assets/hamburger.png";
 //import chess from "../assets/knight.png";
 function NavBar() {
   const navBarTittle = ["Home", "Skill", "About", "Project", "Contact"];

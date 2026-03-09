@@ -1,9 +1,9 @@
-import mapIcon from "../assets/maps.png";
-import githubIcon from "../assets/github.png";
-import linkedinIcon from "../assets/linkedin.png";
-import mailIcon from "../assets/email.png";
+import mapIcon from "../../assets/maps.png";
+import githubIcon from "../../assets/github.png";
+import linkedinIcon from "../../assets/linkedin.png";
+import mailIcon from "../../assets/email.png";
 import NavBar from "./NavBar";
-import { iconHover } from "../data/style";
+import { iconHover } from "../../data/style";
 function HeroSection() {
   return (
     <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-25 md:gap-35  ">

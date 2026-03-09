@@ -1,5 +1,5 @@
-import HeroSection from "./HeroSection";
+import HeroSection from "./heroSectionFolder/HeroSection";
 import SkillSection from "./SkillSection";
-import ProjectSection from "./ProjectSection";
+import ProjectSection from "./projectSectionFolder/ProjectSection";
 
 export { HeroSection, SkillSection, ProjectSection };
