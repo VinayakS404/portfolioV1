@@ -1,9 +1,13 @@
 import ProjectCardDetailed from "./ProjectCardDetailed";
-import { bgBlurNBack } from "../../data/style";
+import ProjectMoreNLessBtn from "./ProjectMoreNLessBtn";
+import { bgBlurOverlay } from "../../data/style";
+
 function ProjectSection() {
   return (
-    <div className={`h-350 w-full pt-50  flex flex-col items-center ${bgBlurNBack}`}>
-      <div>
+    <div className="relative w-full pt-50 flex flex-col items-center">
+      <div className={`absolute ${bgBlurOverlay}`} />
+
+      <div className="relative z-10 w-full flex flex-col items-center">
         <p className="text-white font-['Anton'] text-[45px] md:text-6xl w-full max-w-2xl leading-tight">
           Current&nbsp;
           <span className="text-blue-500 font-bold block md:inline">
@@ -26,14 +30,20 @@ function ProjectSection() {
             &nbsp;practical skills&nbsp;
           </span>
         </p>
-      </div>
-      <div>
-        <ProjectCardDetailed />
-        <ProjectCardDetailed />
-        <ProjectCardDetailed />
-        <ProjectCardDetailed />
+
+        <ProjectMoreNLessBtn />
+
+        <div>
+          <ProjectCardDetailed />
+          <ProjectCardDetailed />
+          <ProjectCardDetailed />
+          <ProjectCardDetailed />
+          <ProjectCardDetailed />
+          <ProjectCardDetailed />
+        </div>
       </div>
     </div>
   );
 }
+
 export default ProjectSection;
