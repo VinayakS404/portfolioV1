@@ -5,7 +5,7 @@ function ProjectCardDetailed({ isDetailed }) {
   const projectDetailed = projects.map((singleProject) => {
     return (
       <div
-        className=" w-screen h-100 flex  justify-center mt-20"
+        className=" w-screen h-100 flex  justify-center mt-10"
         key={singleProject.id}
       >
         <div className=" w-290 h-full relative  flex ">
@@ -53,7 +53,7 @@ function ProjectCardDetailed({ isDetailed }) {
     );
   });
   const projectLessDetailed = (
-    <div className="   grid grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-30 border-t border-l ">
+    <div className="   grid grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-10 border-t border-l  ">
       {projects.map((singleProject) => {
         return (
           <div
@@ -70,18 +70,20 @@ function ProjectCardDetailed({ isDetailed }) {
               </p>
             </div>
             <div className="flex gap-2 w-81">
+              <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
+                {singleProject.technologies[0]}
+              </div>
               <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm ">
-                tailwind
+                {singleProject.technologies[1]}
               </div>
               <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
-                js
+                {singleProject.technologies[2]}
               </div>
-              <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
-                tailwind
-              </div>
-              <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
-                +3
-              </div>
+              {singleProject.technologies.length - 3 !== 0 && (
+                <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
+                  +{singleProject.technologies.length - 3}
+                </div>
+              )}
             </div>
             <div>
               <div>
@@ -117,6 +119,6 @@ function ProjectCardDetailed({ isDetailed }) {
     </div>
   );
 
-  return isDetailed ? projectDetailed :  projectLessDetailed ;
+  return isDetailed ? projectDetailed : projectLessDetailed;
 }
 export default ProjectCardDetailed;
