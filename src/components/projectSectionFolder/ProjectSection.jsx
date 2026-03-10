@@ -1,8 +1,10 @@
 import ProjectCardDetailed from "./ProjectCardDetailed";
 import ProjectMoreNLessBtn from "./ProjectMoreNLessBtn";
 import { bgBlurOverlay } from "../../data/style";
+import { useState } from "react";
 
 function ProjectSection() {
+  const [isDetailed , setIsDetailed] = useState(false)
   return (
     <div className="relative w-full pt-50 flex flex-col items-center">
       <div className={`absolute ${bgBlurOverlay}`} />
@@ -31,10 +33,10 @@ function ProjectSection() {
           </span>
         </p>
 
-        <ProjectMoreNLessBtn />
+        <ProjectMoreNLessBtn setIsDetailed= {setIsDetailed} isDetailed = {isDetailed} />
 
         <div className="mb-200">
-          <ProjectCardDetailed />
+          <ProjectCardDetailed isDetailed = {isDetailed}/>
         </div>
       </div>
     </div>
