@@ -2,7 +2,7 @@ import githubBlack from "../../assets/github-black.png";
 import www from "../../assets/www-icon.png";
 import { projects } from "../../data/projects";
 function ProjectCardDetailed() {
-  const projectDetailed = projects.map((singleProject) => {
+  /*const projectDetailed = projects.map((singleProject) => {
     return (
       <div className=" w-screen h-100 flex  justify-center mt-20">
         <div className=" w-290 h-full relative  flex ">
@@ -48,15 +48,66 @@ function ProjectCardDetailed() {
         </div>
       </div>
     );
-  });
+  });*/
   const projectLessDetailed = projects.map((singleProject) => {
     return (
-    <div>
-      {singleProject.desc}
-    </div>
+      <div className="h-110 w-90  border-t border-l border-[#55575c] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col items-center justify-around py-3">
+        <div className="bg-white h-50 w-81 rounded-2xl"></div>
+        <div className="h-25 w-81  ">
+          <p className="text-2xl text-white font-medium">
+            {singleProject.name}
+          </p>
+          <p className="line-clamp-2 text-gray-300 text-sm pt-4">
+            {singleProject.desc}
+          </p>
+        </div>
+        <div className="flex gap-2 w-81">
+          <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm ">
+            tailwind
+          </div>
+          <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
+            js
+          </div>
+          <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
+            tailwind
+          </div>
+          <div className="bg-blue-500 border border-[#9ba6d1]  px-3 text-[#ffffff] font-medium rounded-sm">
+            +3
+          </div>
+        </div>
+        <div>
+          <div>
+            <button>
+              <a href={singleProject.websiteLink} target="_blank">
+                <div className=" w-40 h-10 rounded-sm bg-white flex items-center justify-center gap-3">
+                  <div className="flex items-center justify-center gap-3">
+                    <img src={www} className="h-5" alt="github icon" />
+                    <p className="font-bold text-[15px]">Website</p>
+                  </div>
+                </div>
+              </a>
+            </button>{" "}
+            <button>
+              <a href={singleProject.sourceLink} target="_blank">
+                <div className=" w-40 h-10 rounded-sm bg-white flex items-center justify-center gap-3">
+                  <div className="flex items-center justify-center gap-3">
+                    <img src={githubBlack} className="h-5" alt="github icon" />
+                    <p className="font-bold text-[15px]">Source</p>
+                  </div>
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
     );
   });
 
-  return projectDetailed,projectLessDetailed
+  //return projectDetailed,projectLessDetailed
+  return (
+    <div className="   grid grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-30 border-t border-l ">
+      {projectLessDetailed}
+    </div>
+  );
 }
 export default ProjectCardDetailed;

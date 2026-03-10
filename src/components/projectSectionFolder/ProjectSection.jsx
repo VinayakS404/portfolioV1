@@ -1,6 +1,5 @@
 import ProjectCardDetailed from "./ProjectCardDetailed";
 import ProjectMoreNLessBtn from "./ProjectMoreNLessBtn";
-import Test from "./Test"
 import { bgBlurOverlay } from "../../data/style";
 
 function ProjectSection() {
@@ -35,8 +34,7 @@ function ProjectSection() {
         <ProjectMoreNLessBtn />
 
         <div className="mb-200">
-          <Test/>
-          {/* <ProjectCardDetailed /> */}
+          <ProjectCardDetailed />
         </div>
       </div>
     </div>
