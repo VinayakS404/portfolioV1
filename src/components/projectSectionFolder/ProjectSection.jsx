@@ -6,7 +6,7 @@ import { useState } from "react";
 function ProjectSection() {
   const [isDetailed, setIsDetailed] = useState(false);
   return (
-    <div className="relative w-full pt-50 flex flex-col items-center">
+    <div className="relative w-full pt-50 flex flex-col items-center px-10">
       <div className={`absolute ${bgBlurOverlay}`} />
 
       <div className="relative z-10 w-full flex flex-col items-center">
