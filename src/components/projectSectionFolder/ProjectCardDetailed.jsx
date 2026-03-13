@@ -1,9 +1,20 @@
+import { useState, useEffect } from "react";
 import githubBlack from "../../assets/github-black.png";
 import www from "../../assets/www-icon.png";
 import { projects } from "../../data/projects";
 function ProjectCardDetailed({ isDetailed }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  console.log(isMobile);
   const projectDetailed = projects.map((singleProject) => {
-    
     return (
       <div
         className=" w-screen h-100 flex  justify-center mt-10"
@@ -54,11 +65,11 @@ function ProjectCardDetailed({ isDetailed }) {
     );
   });
   const projectLessDetailed = (
-    <div className="   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-10 border-t border-l  ">
+    <div className="grid grid-cols-1 min-[850px]:grid-cols-2 min-[1220px]:grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-10 border-t border-l  ">
       {projects.map((singleProject) => {
         return (
           <div
-            className="h-110 w-90  border-t border-l border-[#55575c] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col items-center justify-around py-3"
+            className="h-110 min-w-90  md:w-90 border-t border-l border-[#55575c] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col items-center justify-around py-3"
             key={singleProject.id}
           >
             <div className="bg-white h-50 w-81 rounded-2xl"></div>
