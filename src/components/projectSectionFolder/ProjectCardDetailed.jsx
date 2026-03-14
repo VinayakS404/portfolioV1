@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import githubBlack from "../../assets/github-black.png";
 import www from "../../assets/www-icon.png";
 import { projects } from "../../data/projects";
+import { websiteNSourceBtn,websiteNSourceBtnSpan } from "../../data/style";
 function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
@@ -72,7 +73,7 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
       {projects.map((singleProject) => {
         return (
           <div
-            className=" min-w-90  md:w-90 hover:scale-105 border-t border-l hover:border border-[#55575c] hover:border-[#b9becb] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col gap-3 items-center justify-around py-4 transition-all duration-200"
+            className=" min-w-90  md:w-90 hover:scale-105 border-t border-l hover:border border-[#55575c] hover:border-[#b9becb] bg-[rgb(49,49,57)]/50 hover:bg-[rgb(49,49,57)]/80 backdrop-blur-sm  rounded-xl flex flex-col gap-3 items-center justify-around py-4 transition-all duration-200"
             key={singleProject.id}
           >
             <div className="bg-white h-50 w-81 rounded-2xl"></div>
@@ -80,8 +81,10 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
               <p className="text-2xl text-white font-medium">
                 {singleProject.name}
               </p>
-              <div className={` ${!isMobile && 'h-20' }`}>
-                <p className={`${!isMobile &&'line-clamp-3' } text-gray-300 text-sm pt-4`}>
+              <div className={` ${!isMobile && "h-20"}`}>
+                <p
+                  className={`${!isMobile && "line-clamp-3"} text-gray-300 text-sm pt-4`}
+                >
                   {singleProject.desc}
                 </p>
               </div>
@@ -97,7 +100,7 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
                 {singleProject.technologies[2]}
               </div>
               {singleProject.technologies.length - 3 !== 0 && (
-                <div className="bg-blue-500   px-3 py-0.5 text-[#ffffff] font-medium rounded-sm">
+                <div className="bg-blue-500    px-3 py-0.5 text-[#ffffff] font-medium rounded-sm">
                   +{singleProject.technologies.length - 3}
                 </div>
               )}
@@ -106,7 +109,8 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
               <div>
                 <button>
                   <a href={singleProject.websiteLink} target="_blank">
-                    <div className=" w-40 h-10 rounded-sm bg-white flex items-center justify-center gap-3">
+                    <div className={websiteNSourceBtn}>
+                      <span className={websiteNSourceBtnSpan}></span>
                       <div className="flex items-center justify-center gap-3">
                         <img src={www} className="h-5" alt="github icon" />
                         <p className="font-bold text-[15px]">Website</p>
@@ -116,8 +120,9 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
                 </button>{" "}
                 <button>
                   <a href={singleProject.sourceLink} target="_blank">
-                    <div className=" w-40 h-10 rounded-sm bg-white flex items-center justify-center gap-3">
+                    <div className={websiteNSourceBtn}>
                       <div className="flex items-center justify-center gap-3">
+                        <span className={websiteNSourceBtnSpan}></span>
                         <img
                           src={githubBlack}
                           className="h-5"
