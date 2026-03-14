@@ -38,7 +38,7 @@ function SkillSection() {
   });
 
   return (
-    <div className="relative  mt-50 flex flex-col items-center px-10">
+    <div className="relative  mt-50 flex flex-col items-center px-10 ">
       <div className={`${bgBlurOverlay } ${sectionBase} absolute`} />
 
       <div className="relative z-10 w-full flex flex-col items-center">

@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 import { iconHover } from "../../data/style";
 function HeroSection() {
   return (
-    <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-25 md:gap-35  ">
+    <div className="max-h-200  flex flex-col  items-center text-white px-8  gap-25 md:gap-35  overflow-x-hidden overflow-y-hidden">
       <NavBar />
       <div className=" h-[60%] flex flex-col items-center justify-center  gap-3 pt-50 md:pt-70">
         <div className="flex items-center gap-1">

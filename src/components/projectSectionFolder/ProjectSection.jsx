@@ -5,8 +5,9 @@ import { useState } from "react";
 
 function ProjectSection() {
   const [isDetailed, setIsDetailed] = useState(false);
+
   return (
-    <div className="relative w-full pt-50 flex flex-col items-center px-10">
+    <div className="relative w-full pt-50 flex flex-col items-center px-10 overflow-x-hidden overflow-y-hidden">
       <div className={`absolute ${bgBlurOverlay}`} />
 
       <div className="relative z-10 w-full flex flex-col items-center">
@@ -39,7 +40,10 @@ function ProjectSection() {
         />
 
         <div className="mb-100">
-          <ProjectCardDetailed isDetailed={isDetailed} />
+          <ProjectCardDetailed
+            setIsDetailed={setIsDetailed}
+            isDetailed={isDetailed}
+          />
         </div>
       </div>
     </div>
