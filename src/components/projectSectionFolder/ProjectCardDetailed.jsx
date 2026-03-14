@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import githubBlack from "../../assets/github-black.png";
 import www from "../../assets/www-icon.png";
 import { projects } from "../../data/projects";
-function ProjectCardDetailed({ isDetailed }) {
+function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
     const handleResize = () => {
@@ -14,6 +14,9 @@ function ProjectCardDetailed({ isDetailed }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   console.log(isMobile);
+  if (isMobile) {
+    setIsDetailed(false);
+  }
   const projectDetailed = projects.map((singleProject) => {
     return (
       <div
@@ -65,21 +68,23 @@ function ProjectCardDetailed({ isDetailed }) {
     );
   });
   const projectLessDetailed = (
-    <div className="grid grid-cols-1 min-[850px]:grid-cols-2 min-[1220px]:grid-cols-3 gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-10 border-t border-l  ">
+    <div className="grid grid-cols-1 min-[850px]:grid-cols-2 min-[1220px]:grid-cols-3  gap-y-5 gap-x-5  justify-items-center items-center p-5 rounded-3xl mt-10 border-t border-l   ">
       {projects.map((singleProject) => {
         return (
           <div
-            className="h-110 min-w-90  md:w-90 border-t border-l border-[#55575c] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col items-center justify-around py-3"
+            className=" min-w-90  md:w-90 hover:scale-105 border-t border-l hover:border border-[#55575c] hover:border-[#b9becb] bg-[rgb(49,49,57)]/50 backdrop-blur-sm  rounded-xl flex flex-col gap-3 items-center justify-around py-4 transition-all duration-200"
             key={singleProject.id}
           >
             <div className="bg-white h-50 w-81 rounded-2xl"></div>
-            <div className="h-25 w-81  ">
+            <div className="flex flex-col w-81  ">
               <p className="text-2xl text-white font-medium">
                 {singleProject.name}
               </p>
-              <p className="line-clamp-2 text-gray-300 text-sm pt-4">
-                {singleProject.desc}
-              </p>
+              <div className={` ${!isMobile && 'h-20' }`}>
+                <p className={`${!isMobile &&'line-clamp-3' } text-gray-300 text-sm pt-4`}>
+                  {singleProject.desc}
+                </p>
+              </div>
             </div>
             <div className="flex gap-2 w-81">
               <div className="bg-blue-500   px-3 py-0.5 text-[#ffffff] font-medium rounded-sm ">
