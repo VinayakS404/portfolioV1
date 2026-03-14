@@ -1,5 +1,11 @@
 import { frontEndData, backEndData } from "../data/technologies";
-import { cardClass, cardInnerBgClass, cardGridClass, bgBlurOverlay, sectionBase } from "../data/style";
+import {
+  cardClass,
+  cardInnerBgClass,
+  cardGridClass,
+  bgBlurOverlay,
+  sectionBase,
+} from "../data/style";
 function SkillSection() {
   const frontEndTech = frontEndData.map((items) => {
     return (
@@ -39,7 +45,7 @@ function SkillSection() {
 
   return (
     <div className="relative  mt-50 flex flex-col items-center px-10 ">
-      <div className={`${bgBlurOverlay } ${sectionBase} absolute`} />
+      <div className={`${bgBlurOverlay} ${sectionBase} absolute`} />
 
       <div className="relative z-10 w-full flex flex-col items-center">
         <div>

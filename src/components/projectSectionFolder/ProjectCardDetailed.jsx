@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import githubBlack from "../../assets/github-black.png";
 import www from "../../assets/www-icon.png";
 import { projects } from "../../data/projects";
-import { websiteNSourceBtn,websiteNSourceBtnSpan } from "../../data/style";
+import { websiteNSourceBtn, websiteNSourceBtnSpan } from "../../data/style";
 function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
@@ -117,7 +117,7 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
                       </div>
                     </div>
                   </a>
-                </button>{" "}
+                </button>
                 <button>
                   <a href={singleProject.sourceLink} target="_blank">
                     <div className={websiteNSourceBtn}>
