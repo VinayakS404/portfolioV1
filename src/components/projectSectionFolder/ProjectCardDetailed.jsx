@@ -21,7 +21,7 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
   const projectDetailed = projects.map((singleProject) => {
     return (
       <div
-        className=" w-screen h-100 flex  justify-center mt-10"
+        className=" w-screen h-100 flex  justify-center mt-10 px-10"
         key={singleProject.id}
       >
         <div className=" w-290 h-full relative  flex ">
@@ -106,17 +106,19 @@ function ProjectCardDetailed({ setIsDetailed, isDetailed }) {
               )}
             </div>
             <div>
-              <div>
+              <div className="w-83 flex gap-1 justify-start ">
                 <button>
-                  <a href={singleProject.websiteLink} target="_blank">
-                    <div className={websiteNSourceBtn}>
-                      <span className={websiteNSourceBtnSpan}></span>
-                      <div className="flex items-center justify-center gap-3">
-                        <img src={www} className="h-5" alt="github icon" />
-                        <p className="font-bold text-[15px]">Website</p>
+                  {singleProject.website && (
+                    <a href={singleProject.websiteLink} target="_blank">
+                      <div className={websiteNSourceBtn}>
+                        <span className={websiteNSourceBtnSpan}></span>
+                        <div className="flex items-center justify-center gap-3">
+                          <img src={www} className="h-5" alt="github icon" />
+                          <p className="font-bold text-[15px]">Website</p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  )}
                 </button>
                 <button>
                   <a href={singleProject.sourceLink} target="_blank">
